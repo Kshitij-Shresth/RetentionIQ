@@ -15,3 +15,15 @@ def create_pipeline(data):
     numerical_cols = X.select_dtypes(include=['int64', 'float64']).columns
 
  
+#Scaling the numerical and categorical data with encoding 
+    numerical_transformer = StandardScaler()
+    categorical_transformer = OneHotEncoder(handle_unknown='ignore')
+
+#Bundling 
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ('num', numerical_transformer, numerical_cols),
+            ('cat', categorical_transformer, categorical_cols)
+        ])
+
+    return preprocessor, X, y
