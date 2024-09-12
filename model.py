@@ -15,3 +15,9 @@ def train_model(preprocessor, X, y):
         'model__min_samples_leaf': [1, 2, 4],
         'model__bootstrap': [True, False]
     }
+#Using Grid search to get the best pipeline 
+    grid_search = GridSearchCV(estimator=pipeline, param_grid=param_grid, cv=5, scoring='accuracy', n_jobs=-1, verbose=2)
+    grid_search.fit(X_train, y_train)
+    best_pipeline = grid_search.best_estimator_
+
+    return best_pipeline, X_test, y_test
