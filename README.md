@@ -16,6 +16,18 @@ Evaluate the model’s performance using functions in evaluation.py.
 ### Feature Importance: 
 Use features.py to visualize the top 10 most important features in the model.
 
+## Evaluation Metrics
+### Accuracy: 
+Proportion of correct predictions.
+
+### Confusion Matrix: 
+Describes the model's performance on classification tasks.
+
+### ROC AUC Score: 
+Evaluates the model's ability to distinguish between classes.
+
+### ROC Curve:
+Visualizes true positive rate vs false positive rate.
 
 ![image](https://github.com/user-attachments/assets/bbc063c1-c6af-4d78-a2cc-0fc7c0387a50)
 
