@@ -1,6 +1,8 @@
 # RetentionIQ
-Employee attrition software using a Random Forest Classifier. The pipeline includes data preprocessing, model training, evaluation metrics, and feature importance visualization. The model utilizes numerical scaling, one-hot encoding for categorical variables, and hyperparameter tuning through grid search.
 
+RetentionIQ is a comprehensive employee attrition prediction software designed to help organizations forecast employee turnover. Employee attrition, or turnover, is a significant concern for companies aiming to retain talent. This project applies machine learning techniques to predict whether an employee is likely to leave based on a variety of attributes, such as job satisfaction, work environment, and performance metrics. The goal is to provide businesses with actionable insights to reduce attrition rates. By analyzing employee-related data, this tool identifies key factors contributing to employee attrition and improving retention strategies. The core of the model is a Random Forest classifier, integrated into a robust data preprocessing pipeline to handle both numerical and categorical data. The software evaluates model performance using a variety of metrics, including accuracy, ROC AUC scores, and feature importance analysis.
+
+This project also includes hyperparameter tuning using GridSearchCV to optimize model performance, with the potential to further integrate real-time attrition risk scoring and visualization tools.
 ### Load Data: 
 The data is loaded and preprocessed via the function in data.py.
 
